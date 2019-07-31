@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sistemaSolar [
+  <!ELEMENT sistemaSolar (cuerpo*)>
+  <!ELEMENT cuerpo (planeta|satelite|asteroide)>
+  <!ELEMENT planeta (#PCDATA)>
+  <!ELEMENT satelite (#PCDATA)>
+  <!ELEMENT asteroide (#PCDATA)>
+  <!ATTLIST planeta img CDATA #REQUIRED>
+]>
+
+<sistemaSolar>
+  <cuerpo>
+    <planeta img="img/mercurio.jpg">Mercurio</planeta>
+  </cuerpo>
+
+  <cuerpo>
+    <planeta img="img/venus.jpg">Venus</planeta>
+  </cuerpo>
+
+  <cuerpo>
+    <planeta img="img/tierra.jpg">Tierra</planeta>
+    <satelite>Luna</satelite>
+  </cuerpo>
+</sistemaSolar>
